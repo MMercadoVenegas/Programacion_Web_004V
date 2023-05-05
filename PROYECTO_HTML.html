@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automovil</title>
+    <link rel="stylesheet" href="Estilos.css">
+
+</head>
+<body>
+    <form action="Datos_procesados.html" method="post" enctype="applicattion/x-www-fomr-urlencoded" name="formulario1">
+        <label for="usuario"> Usuario </label>
+        <input type="text" name="usuario" value="" placeholder="Ej: Juan" required>
+        <input type="submit" value="Enviar">
+        <select name="Automovil" size="6">
+            <optgroup label="Chevrolet">
+                <option value="1">Corsa</option>
+                <option value="2">Combo</option>
+                <option value="3">Captiva</option>
+            </optgroup>
+            <optgroup label="Toyota">
+                <option value="4">Yaris</option>
+                <option value="5">Corolla</option>
+                <option value="6">Rav4</option>
+            </optgroup>
+            <optgroup label="Fiat">
+                <option value="7">500</option>
+                <option value="8">Multipla</option>
+                <option value="9">Panda</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+        <br>
+        <label for="rut">Rut</label>
+        <input type="text" id="rut" name="rut">
+        <br>
+        <label for="appaterno">Apellido Paterno</label>
+        <input type="text" id="appaterno" name="appaterno">
+        <br>
+        <label for="apmaterno">Apellido Materno</label>
+        <input type="text" id="apmaterno" name="apmaterno">
+        <br>
+        <label for="nombre">Nombre(s)</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <label for="fecnacimiento">Fecha de nacimiento</label>
+        <input type="date" id="fecnacimiento" name="fecnacimiento">
+        <br>
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" name="edad">
+        <br>
+        <label for="genero">Género</label>
+        <select id="genero" name="genero">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+            <option valuie="ninguno">Ninguno</option>
+        </select>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="celular">Celular</label>
+        <input type="text" id="celular" name="celular">
+        <br>
+        <label for="profesion">Profesion</label>
+        <input type="text" id="profesion" name="profesion">
+        <br>
+        <label for="motivacion">Motivacion para postular</label>
+        <textarea id="motivacion" name="motivacion"></textarea>
+        <br>
+        <input type="button" value="Valida Formulario" onclick="escribirCarta">
+    </form>
+    <h1 id=ttlafrica>_______________________________________________________Africa_______________________________________________________</h1>
+    <h1 id=ttlamerica >______________________________________________________America______________________________________________________</h1>
+        <h2>Estados Unidos</h2>
+            <p img src="chevrolet_icon.png">
+            <p>GMC</p>
+            <p>AMC</p>
+            <p>Pontiac</p>
+            <p>Hummer</p>
+            <p>Chrysler</p>
+            <p>Dodge</p>
+            <p>Ford</p>
+            <p>Lincoln</p>
+            <p>Cadillac</p>
+            <p>Tesla</p>
+            <p>Saturn</p>
+            <P>Oldsmobile</P>
+            <p>Mercury</p>
+    <h1 id=ttlasia >_______________________________________________________Asia_______________________________________________________</h1>
+        <h2>Japon</h2>
+            <p>Nissan</p>
+            <p>Toyota</p>
+            <p>Honda</p>
+    <h1 id=ttleuropa>______________________________________________________Europa______________________________________________________</h1>
+        <h2>Alemania</h2>
+            <p>Audi</p>
+            <p>Mercedes-Benz</p>
+            <p>Opel</p>
+            <p>VolksWagen</p>
+            <P>Porsche</P>
+        <h2>España</h2>
+            <p>Seat</p>
+            <h1 id=ttloceania >______________________________________________________Oceania______________________________________________________</h1>
+            <h2>Australia</h2>
+                <p>Holden</p>
+                <a id="demo"></a>
+        <p>
+            <label>Nombre:</label>
+            <input id="nombre" type="text">
+            <input type="button"
+            value="Saludar"
+            onclick="saludar()">
+        </p>
+        <script src="demo.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                $("#btnValida").click(validar)
+                $("#btnMostrar").click(validar)
+                $("#carta").hide()
+                $("#btnMostrar").hide()
+                $("#msgRut").hide()
+            $("#msgRut").hide()
+            })
+
+        </script>
+        <h1>Ejemplo de las funciones</h1>
+        <input type="button" value="Clickéame" onclick="saludoBoton()">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+    
+    
+    
+    
+            saludo()
+        </script>
+    
+        <label for="num1">Número 1</label>
+        <input type="number" id="num1" name="num1">
+        <label for="num2">Número 2</label>
+        <input type="number" id="num2" name="num2">
+        <input type="button" value="Sumar" onclick="sumar()">
+    
+        <label for="resultado">Resultado</label>
+        <input type="text" id="resultado" name="resultado">
+    
+        <script type="text/javascript" src="demo.js"></script>
+    </body>
+    </html>
